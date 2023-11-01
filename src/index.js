@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/'
-import Survey from './pages/Survey/'
+import About from './pages/About/'
 import Header from './components/Header'
 // On ajoute nos composants
 import ClientForm from './components/ClientForm'
@@ -14,7 +14,7 @@ ReactDOM.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/survey/:questionNumber" element={<Survey />}>
+        <Route path="/About" element={<About />}>
           {/* Nous imbriquons nos composants dans survey */}
           <Route path="client" element={<ClientForm />} />
           <Route path="freelance" element={<FreelanceForm />} />
