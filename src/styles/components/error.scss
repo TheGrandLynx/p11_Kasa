@@ -1,0 +1,17 @@
+.error404Container {
+  color: $colour-primary;
+  @include flex-column;
+
+  @include flex-center;
+
+  &__Number {
+    font-size: 288px;
+    margin: 0;
+  }
+  &__Text {
+    font-size: 36px;
+  }
+  &__link {
+    font-size: 18px;
+  }
+}

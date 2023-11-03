@@ -1,0 +1,24 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@mixin flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin font($size, $weight) {
+  font-size: ($size);
+  font-style: normal;
+  font-weight: $weight;
+  line-height: 142.6%;
+}

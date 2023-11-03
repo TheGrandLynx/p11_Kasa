@@ -1,0 +1,11 @@
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './components/nav';
+@import './components/error';
+@import './components/header';
+@import './components/footer';
+
+.test {
+  background-color: red($color: #000000);
+}
