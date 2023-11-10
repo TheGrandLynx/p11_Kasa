@@ -5,6 +5,8 @@
 @import './components/error';
 @import './components/header';
 @import './components/footer';
+@import './components/banner';
+@import './components/card';
 
 .test {
   background-color: red($color: #000000);

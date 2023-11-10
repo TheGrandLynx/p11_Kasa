@@ -2,4 +2,12 @@ $colour-primary: #ff6060;
 $colour-secondary: #f7f7f7;
 $colour-tertiary: #ffffff;
 
-$coleur-footer: #000000;
+$colour-footer: #000000;
+
+$background-color: rgba(0, 0, 0, 0.3);
+$banner-background: $background-color url('../assets/bgHomeBanner.svg');
+$linear-cards: linear-gradient(
+  180deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(0, 0, 0, 0.5) 100%
+);
