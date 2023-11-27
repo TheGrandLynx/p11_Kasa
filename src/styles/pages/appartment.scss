@@ -1,0 +1,63 @@
+.appartmentContainer {
+  @include flex-center;
+  flex-direction: column;
+}
+
+.rateHostcontainer {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.hostInfoContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+
+.rateContainer {
+  display: flex;
+  align-items: flex-start;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleTagsContainer {
+  @include flex-column;
+
+  h1 {
+    margin: 2% 0;
+    @include font(18px, 500);
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font(36px, 500);
+    }
+  }
+
+  h3 {
+    margin: 2% 0;
+    @include font(14px, 500);
+
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font(18px, 500);
+    }
+  }
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}

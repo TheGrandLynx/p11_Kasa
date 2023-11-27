@@ -3,4 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin: 40px 100px 49px 100px;
+  }
 }

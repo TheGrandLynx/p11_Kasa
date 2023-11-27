@@ -7,11 +7,27 @@
   &__Number {
     font-size: 288px;
     margin: 0;
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font(288px, 700);
+      margin: 0;
+    }
   }
   &__Text {
     font-size: 36px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font(36px, 500);
+      margin: 0;
+    }
   }
   &__link {
     font-size: 18px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font(18px, 500);
+    }
+
+    &:hover,
+    &:focus {
+      text-decoration-line: underline;
+    }
   }
 }

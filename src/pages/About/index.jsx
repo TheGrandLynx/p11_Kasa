@@ -1,13 +1,20 @@
-import { useParams } from 'react-router-dom'
+import Banner from '../../components/Banner'
+import Collapse from '../../components/Collapse'
+import dataAbout from '../../data/dataAbout.json'
 
-function Survey() {
-  const { questionNumber } = useParams()
-
+function About() {
   return (
-    <div>
-      <h1>Questionnaire 🧮</h1>
-      <h2>Question {questionNumber}</h2>
-    </div>
+    <>
+      <Banner className="aboutBackground" />
+      {dataAbout.map((wAbout, id) => (
+        <Collapse
+          key={id}
+          aboutTitle={wAbout.aboutTitle}
+          aboutText={wAbout.aboutText}
+          aboutStyle="aboutStyle"
+        />
+      ))}
+    </>
   )
 }
-export default Survey
+export default About

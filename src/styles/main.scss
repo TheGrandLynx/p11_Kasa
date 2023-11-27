@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './utils/mixins';
+@import './base/base';
 
 @import './components/nav';
 @import './components/error';
@@ -7,6 +8,12 @@
 @import './components/footer';
 @import './components/banner';
 @import './components/card';
+@import './components/collapse';
+@import './components/rate';
+@import './components/carrousel';
+@import './components/host';
+@import './components/tag';
+@import './pages/appartment';
 
 .test {
   background-color: red($color: #000000);
