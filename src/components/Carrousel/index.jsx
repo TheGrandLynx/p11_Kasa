@@ -3,6 +3,7 @@ import arrowLeft from '../../assets/arrowLeft.svg'
 import arrowRight from '../../assets/arrowRight.svg'
 
 export default function Carrousel({ slides }) {
+  //soutenance 7 carrousel
   const [currentSlide, setcurrentSlide] = useState(0) //we define the index of the first slide at 0
   const lengthSlide = slides.length //
 
@@ -45,7 +46,7 @@ export default function Carrousel({ slides }) {
           {index === currentSlide && (
             <img src={slide} alt="appartement à louer" />
           )}
-          {index === currentSlide && (
+          {lengthSlide > 1 && index === currentSlide && (
             <span className="slider__number">
               {currentSlide + 1}/{lengthSlide}
             </span>

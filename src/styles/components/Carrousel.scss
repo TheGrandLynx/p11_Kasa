@@ -48,13 +48,14 @@
     left: 50%;
     top: 85%;
     color: $colour-secondary;
-    @media screen and (min-width: $breakpoint-desktop) {
-      display: block;
+    @media screen and (max-width: $breakpoint-desktop) {
+      /* display: block;
       position: absolute;
       @include font(18px, 500);
       color: $colour-tertiary;
       left: 48%;
-      top: 86%;
+      top: 86%; */
+      display: none;
     }
   }
 }

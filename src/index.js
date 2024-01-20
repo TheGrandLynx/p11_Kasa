@@ -12,6 +12,7 @@ import Footer from './components/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
+  //soutenance 1 Router
   <React.StrictMode>
     <Router>
       <Header />

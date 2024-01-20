@@ -6,7 +6,7 @@ import axios from 'axios'
 
 export default function Home() {
   const [data, setData] = useState([])
-
+  //soutenance 2 home
   useEffect(() => {
     axios.get('/logements.json').then((res) => setData(res.data))
   }, [])

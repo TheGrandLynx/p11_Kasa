@@ -3,6 +3,7 @@ import Collapse from '../../components/Collapse'
 import dataAbout from '../../data/dataAbout.json'
 
 function About() {
+  //soutenance 4 about
   return (
     <>
       <Banner className="aboutBackground" />

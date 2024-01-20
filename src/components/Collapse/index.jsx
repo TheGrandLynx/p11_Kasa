@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react'
 import Chevron from '../../assets/chevronDown.svg'
 
 export default function Collapse(props) {
+  //soutenance 5 collapse
   const [toggle, setToggle] = useState(false) //we set the toggle state wihich is by default false
   const [heightCollapse, setHeightCollapse] = useState() //we set the state of the height of the collapse
 
@@ -26,7 +27,7 @@ export default function Collapse(props) {
       <div onClick={toggleState} className="collapse__visible">
         <h2>{props.aboutTitle}</h2>
         <img
-          className={toggle ? 'chevron rotatedChevron' : 'chevron'}
+          className={toggle ? 'chevron' : 'chevron rotatedChevron'}
           src={Chevron}
           alt="chevron"
         />

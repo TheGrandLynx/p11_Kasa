@@ -22,6 +22,10 @@ body {
   }
 }
 
+.redFont {
+  color: #ff6060;
+}
+
 .navHeader {
   display: flex;
   align-items: center;
@@ -507,17 +511,15 @@ body {
   top: 85%;
   color: #f7f7f7;
 }
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 769px) {
   .slider__number {
-    display: block;
+    /* display: block;
     position: absolute;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 142.6%;
-    color: #ffffff;
+    @include font(18px, 500);
+    color: $colour-tertiary;
     left: 48%;
-    top: 86%;
+    top: 86%; */
+    display: none;
   }
 }
 

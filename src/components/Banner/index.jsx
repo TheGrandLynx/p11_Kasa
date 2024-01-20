@@ -1,4 +1,5 @@
 function Banner({ className }) {
+  //soutenance 3.5 banner
   const wArg = className
   if (wArg === 'banner') {
     //if it is the banner from the home page
